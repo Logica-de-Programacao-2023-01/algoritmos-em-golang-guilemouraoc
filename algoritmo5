@@ -5,14 +5,11 @@ import (
 )
 
 func main() {
-	var n1, n2, n3 float64
-	fmt.Print("Digite a nota 1:")
+	var x int
+	fmt.Print("Digite sua idade:")
 	fmt.Scan(&n1)
-	fmt.Print("Digite a nota 2:")
-	fmt.Scan(&n2)
-	fmt.Print("Digite a nota 3:")
-	fmt.Scan(&n3)
-	media_pon := (n1*2 + n2*3 + n3*5) / 10
 
-	fmt.Println("media ponderada: ", media_pon)
+	idade_dias := x*365
+
+	fmt.Println("sua idade em dias: ", idade_dias)
 }
