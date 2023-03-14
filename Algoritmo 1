@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x int
+	var y int
+	var z int
+	fmt.Print("Digite o primeiro numero: ")
+	fmt.Scan(&x)
+	fmt.Print("Digite o segundo numero: ")
+	fmt.Scan(&y)
+	fmt.Print("digite o terceiro numero: ")
+	fmt.Scan(&z)
+	fmt.Println("A soma dos numeros selecionados: ", x+y+z)
+
+}
