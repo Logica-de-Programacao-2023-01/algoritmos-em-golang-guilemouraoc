@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var peso float64
+	var altura float64
+	fmt.Print("Digite seu peso em KG ")
+	fmt.Scan(&peso)
+	fmt.Print("Digite sua altura em metros: ")
+	fmt.Scan(&altura)
+	imc := peso / math.Pow(altura, 2)
+	fmt.Println("Seu IMC:", imc)
+
+}
