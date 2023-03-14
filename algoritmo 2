@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x float64
+	fmt.Print("Escolha um numero: ")
+	fmt.Scan(&x)
+	fmt.Println("O dobro desse numero sera:", x*2, "O triplo do numero sera:", x*3, "o quadruplo desse numero sera:", x*4)
+
+}
