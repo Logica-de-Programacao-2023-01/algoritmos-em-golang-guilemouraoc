@@ -1,0 +1,23 @@
+package main
+
+import (
+	"fmt"
+	_ "fmt"
+)
+
+func main() {
+	var salario int
+	fmt.Print("Digite o salário: ")
+	fmt.Scan(&salario)
+
+	s10 := salario * 10 / 100
+	s05 := salario * 5 / 100
+	s_menor := salario + s10
+	s_maior := salario + s05
+	if salario < 1000 {
+		fmt.Println(s_menor)
+	} else if salario >= 1000 {
+		fmt.Println(s_maior)
+
+	}
+}
