@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+	_ "fmt"
+)
+
+func main() {
+	var altura float64
+	var sexo string
+	var pesoIdeal int
+	fmt.Print("Digite sua altura: ")
+	fmt.Scan(&altura)
+	fmt.Print("Digite seu sexo: ")
+	fmt.Scan(&sexo)
+	fmt.Print("Digite seu peso: ")
+	if sexo == "M" {
+		pesoIdeal = int((altura * 72.7) - 58)
+		fmt.Println("Seu peso ideal é: ", pesoIdeal)
+
+	} else if sexo == "F" {
+		pesoIdeal = int((altura * 62.1) - 44.7)
+		fmt.Println("Seu peso ideal é: ", pesoIdeal)
+	} else {
+		fmt.Println("Sexo inválido")
+
+	}
