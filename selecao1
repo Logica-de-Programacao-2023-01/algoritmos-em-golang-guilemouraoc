@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+	_ "fmt"
+)
+
+func main() {
+	var x int
+	var y int
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scan(&x)
+	fmt.Print("Digite o segundo numero: ")
+	fmt.Scan(&y)
+	if x > y {
+		fmt.Println(x)
+
+	} else {
+		fmt.Println(y)
+	}
+}
