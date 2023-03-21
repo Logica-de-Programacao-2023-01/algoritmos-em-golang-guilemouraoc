@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"
+	_ "fmt"
+)
+
+func main() {
+	var x int
+
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&x)
+
+	if x%3 == 0 && x%5 == 0 {
+		fmt.Println("Esse número é multiplo de 3 e 5")
+	}
+}
