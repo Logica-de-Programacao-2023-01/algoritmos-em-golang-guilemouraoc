@@ -1,0 +1,29 @@
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var soma, count int
+    var numero float64
+
+    for {
+        fmt.Print("Digite um número (0 para parar): ")
+        fmt.Scan(&numero)
+
+        if numero == 0 {
+            break
+        }
+
+        soma += int(numero)
+        count++
+    }
+
+    if count == 0 {
+        fmt.Println("Nenhum número foi digitado!")
+    } else {
+        media := float64(soma) / float64(count)
+        fmt.Printf("A média aritmética dos %d números digitados é %.2f\n", count, media)
+    }
+}
